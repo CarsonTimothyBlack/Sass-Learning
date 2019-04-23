@@ -1,26 +1,119 @@
-$size: 700px;
-
 $colors: (
-    primary: red,
-    accent: blue
+    primary: #005DFF,
+    theme: green,
+    card: blue,
+    buttons: rgb(241, 241, 204),
+    story: red
 );
 
-@function getColor($color) {
-    @return map-get($colors, $color);
+
+$padding: 15px;
+$borders: 15px;
+$bigSize: 3em;
+$inputSize: 2em;
+$font: 'Montserrat';
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
 }
+
+
+
 
 body {
     margin: 0;
+    font-family: $font;
+
+    #bg {
+        background: color(primary);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    header {
+        font-size: 2em;
+        color: white;
+        padding: $padding;
+        margin-left: 15px;
+    }
 }
 
-#bg1 {
-    clip-path: polygon(100% 0, 100% 38%, 76% 100%, 0 100%, 0 0);
-    background: getColor(primary);
-    height: $size;
-    text-align: center;
-}
+main {
 
-#bg2 {
-    height: $size;
-    background: getColor(accent);
+    #theme {
+        background: white;
+        text-align: center;
+        margin: 1em auto;
+        padding: $padding;
+        width: 85%;
+        border: solid 1px black;
+        border-radius: $borders;
+
+        h2 {
+            font-size: $bigSize;
+        }
+
+        button {
+            font-family: $font;
+            background: color(buttons);
+            margin: 20px;
+            font-size: $inputSize;
+            padding: $padding;
+            width: 40%;
+            border-radius: $borders;
+
+        }
+
+    }
+
+    #card {
+        background: white;
+        text-align: center;
+
+        h2 {
+            font-size: $bigSize;
+        }
+
+        input {
+            font-size: $inputSize;
+            font-family: $font;
+            display: block;
+            width: 40%;
+            padding: $padding;
+            margin: 15px auto;
+            border: solid 2px black;
+        }
+
+        button {
+            font-family: $font;
+            background: color(buttons);
+            margin: 20px;
+            font-size: $inputSize;
+            padding: $padding;
+            width: 40%;
+            border-radius: $borders;
+
+        }
+    }
+
+    #story {
+        background: white;
+        text-align: center;
+        margin: 1em auto;
+        padding: $padding;
+        width: 85%;
+        border: solid 1px black;
+        border-radius: $borders;
+
+        h2 {
+            font-size: $bigSize;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+    }
 }

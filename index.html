@@ -2,33 +2,44 @@
 <html>
     <head>
         <title>The Sass page</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
     </head>
     <body>
-        <section id="bg1">
-            <h1 id="headFirst">Story Maker 2000</h1>
-            <p>Adjective</p>
-            <input id="input1" type="text" name="adjective" />
-            <p>Noun</p>
-            <input id="input2" type="text" name="noun">
-            <p>Verb</p>
-            <input id="input3" type="text" name="verb">
-            <p>Plural Noun</p>
-            <input id="input4" type="text" name="noun">
-            <p>Comparative Adjective(Better, Older, Smarter)</p>
-            <input id="input5" type="text" name="adjective">
-            <p>Verb</p>
-            <input id="input6" type="text" name="verb">
-            <p>Noun</p>
-            <input id="input7" type="text" name="noun">
-            <p>Past tense Verb</p>
-            <input id="input8" type="text" name="verb"><br>
-            <button onclick="addStory()">Publish Story</button>
-        </section>
-        <section id="bg2">
-            <h1>Your story will go here.</h1>
-           <p id="story"></p>
-        </section>
+
+        <div id="bg"></div>
+
+        <header>
+            <h1>StoryMaker 2000</h1>
+        </header>
+
+        <main>
+            <section id="theme">
+                <h2>What kind of story do you want?</h2>
+                <button id="sassBtn">Sass Story</button>
+                <button id="actionBtn">Action Story</button>
+                <button id="loveBtn">Love Story</button>
+                <button id="crimeBtn">Crime Story</button>
+            </section>
+
+            <section id="card">
+                <h2>Enter words into the boxes</h2>
+                <input id="input1" type="text" name="adjective" placeholder="Adjective"/>
+                <input id="input2" type="text" name="noun" placeholder="Noun">
+                <input id="input3" type="text" name="verb" placeholder="Verb">
+                <input id="input4" type="text" name="noun" placeholder="Noun">
+                <input id="input5" type="text" name="adjective" placeholder="Comparative Adjective">
+                <input id="input6" type="text" name="verb" placeholder="Verb">
+                <input id="input7" type="text" name="noun" placeholder="Noun">
+                <input id="input8" type="text" name="verb" placeholder="Verb past-tense"><br>
+                <button onclick="addStory()">Publish Story</button>
+            </section>
+
+            <section id="story">
+                <h2>Your story will go here.</h2>
+                <p id="story-content"></p>
+            </section>
+        </main>
 
         <script src="Sass.js"></script>
     </body>

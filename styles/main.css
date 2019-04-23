@@ -1,17 +1,91 @@
 body {
   margin: 0;
+  font-family: "Montserrat";
 }
 
-#bg1 {
-  -webkit-clip-path: polygon(100% 0, 100% 38%, 76% 100%, 0 100%, 0 0);
-          clip-path: polygon(100% 0, 100% 38%, 76% 100%, 0 100%, 0 0);
-  background: red;
-  height: 700px;
+body #bg {
+  background: #005DFF;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+body header {
+  font-size: 2em;
+  color: white;
+  padding: 15px;
+  margin-left: 15px;
+}
+
+main #theme {
+  background: white;
+  text-align: center;
+  margin: 1em auto;
+  padding: 15px;
+  width: 85%;
+  border: solid 1px black;
+  border-radius: 15px;
+}
+
+main #theme h2 {
+  font-size: 3em;
+}
+
+main #theme button {
+  font-family: "Montserrat";
+  background: #f1f1cc;
+  margin: 20px;
+  font-size: 2em;
+  padding: 15px;
+  width: 40%;
+  border-radius: 15px;
+}
+
+main #card {
+  background: white;
   text-align: center;
 }
 
-#bg2 {
-  height: 700px;
-  background: blue;
+main #card h2 {
+  font-size: 3em;
+}
+
+main #card input {
+  font-size: 2em;
+  font-family: "Montserrat";
+  display: block;
+  width: 40%;
+  padding: 15px;
+  margin: 15px auto;
+  border: solid 2px black;
+}
+
+main #card button {
+  font-family: "Montserrat";
+  background: #f1f1cc;
+  margin: 20px;
+  font-size: 2em;
+  padding: 15px;
+  width: 40%;
+  border-radius: 15px;
+}
+
+main #story {
+  background: white;
+  text-align: center;
+  margin: 1em auto;
+  padding: 15px;
+  width: 85%;
+  border: solid 1px black;
+  border-radius: 15px;
+}
+
+main #story h2 {
+  font-size: 3em;
+}
+
+main #story p {
+  font-size: 20px;
 }
 /*# sourceMappingURL=main.css.map */
