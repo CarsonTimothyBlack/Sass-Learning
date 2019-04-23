@@ -1,0 +1,26 @@
+$size: 700px;
+
+$colors: (
+    primary: red,
+    accent: blue
+);
+
+@function getColor($color) {
+    @return map-get($colors, $color);
+}
+
+body {
+    margin: 0;
+}
+
+#bg1 {
+    clip-path: polygon(100% 0, 100% 38%, 76% 100%, 0 100%, 0 0);
+    background: getColor(primary);
+    height: $size;
+    text-align: center;
+}
+
+#bg2 {
+    height: $size;
+    background: getColor(accent);
+}

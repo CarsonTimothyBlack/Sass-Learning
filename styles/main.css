@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+#bg1 {
+  -webkit-clip-path: polygon(100% 0, 100% 38%, 76% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 38%, 76% 100%, 0 100%, 0 0);
+  background: red;
+  height: 700px;
+  text-align: center;
+}
+
+#bg2 {
+  height: 700px;
+  background: blue;
+}
+/*# sourceMappingURL=main.css.map */
