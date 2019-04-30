@@ -1,14 +1,7 @@
 body {
   margin: 0;
   font-family: "Montserrat";
-}
-
-body #bg {
   background: #005DFF;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
 }
 
 body header {
@@ -82,5 +75,10 @@ main #story h2 {
 
 main #story p {
   font-size: 20px;
+}
+
+footer {
+  background: #f1f1cc;
+  margin: 0 10px;
 }
 /*# sourceMappingURL=main.css.map */

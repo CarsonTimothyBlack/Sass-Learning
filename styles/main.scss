@@ -23,14 +23,15 @@ $font: 'Montserrat';
 body {
     margin: 0;
     font-family: $font;
+    background: color(primary);
 
-    #bg {
-        background: color(primary);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: -1;
-    }
+    // #bg {
+    //     background: color(primary);
+    //     width: 100%;
+    //     height: 100%;
+    //     position: absolute;
+    //     z-index: -1;
+    // }
 
     header {
         font-size: 2em;
@@ -111,4 +112,9 @@ main {
         }
 
     }
+}
+
+footer {
+    background: color(buttons);
+    margin: 0 10px;
 }
