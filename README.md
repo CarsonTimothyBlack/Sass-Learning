@@ -1,1 +1,1 @@
-# Sass Learning
+# Learning Sass through this project
